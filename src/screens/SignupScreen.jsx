@@ -7,10 +7,10 @@ import Ionicons from "react-native-vector-icons/Ionicons"
 import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons"
 import Feather from "react-native-vector-icons/Feather"
 
-const LoginScreen = () => {
+const SignupScreen = () => {
   const navigation = useNavigation();
-  const handleSignup=()=>{
-    navigation.navigate("Signup");
+  const handleLogin=()=>{
+    navigation.navigate("Login");
 
 };
   const [secureEntry, setSecureEntry] = useState(true);
@@ -22,9 +22,8 @@ const LoginScreen = () => {
       </TouchableOpacity>
 
       <View style={styles.textContainer}>
-        <Text style={styles.headingText}>Hey,</Text>
-        <Text style={styles.headingText}>Welcome</Text>
-        <Text style={styles.headingText}>Back</Text>
+        <Text style={styles.headingText}>Let's get,</Text>
+        <Text style={styles.headingText}>started</Text>
       </View>
 
       <View style={styles.formContainer}>
@@ -34,7 +33,16 @@ const LoginScreen = () => {
             style={styles.input}
             placeholder="Enter your email"
             placeholderTextColor={colors.secondary}
-            keyboardType="email-address"
+            
+          />
+        </View>
+        <View style={styles.inputContainer}>
+          <SimpleLineIcons name="screen-smartphone" color={colors.secondary} size={30} style={styles.inputIcon} />
+          <TextInput
+            style={styles.input}
+            placeholder="Enter your phone number"
+            placeholderTextColor={colors.secondary}
+
           />
         </View>
 
@@ -51,16 +59,12 @@ const LoginScreen = () => {
           </TouchableOpacity>
         </View>
 
-        {/* Forgot Password */}
-        <View style={styles.forgotPasswordContainer}>
-          <TouchableOpacity>
-            <Text style={styles.forgotPasswordText}>Forgot Password?</Text>
-          </TouchableOpacity>
-        </View>
+      
+        
 
         {/* Login Button */}
         <TouchableOpacity style={styles.loginButtonWrapper} onPress={() => navigation.navigate('Home')}>
-          <Text style={styles.loginButtonText}>Login</Text>
+          <Text style={styles.loginButtonText}>Sign up</Text>
         </TouchableOpacity>
 
         <Text style={styles.continueText}>or continue with</Text>
@@ -74,16 +78,16 @@ const LoginScreen = () => {
         </TouchableOpacity>
         
       
-        <TouchableOpacity style={styles.registerButtonWrapper} onPress={() => navigation.navigate('Signup')}>
-        <Text style={styles.registerText}>Don't have an account?</Text>
-        <Text style={styles.registerButtonText}>Sign up</Text>
+        <TouchableOpacity style={styles.registerButtonWrapper} onPress={() => navigation.navigate('Login')}>
+        <Text style={styles.registerText}>Already have an account! </Text>
+        <Text style={styles.registerButtonText}>Login</Text>
         </TouchableOpacity> 
       </View>
     </View>
   );
 };
 
-export default LoginScreen;
+export default SignupScreen;
 
 const styles = StyleSheet.create({
   container: {
