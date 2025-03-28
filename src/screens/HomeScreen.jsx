@@ -12,7 +12,7 @@ const HomeScreen = () => {
 
     };
     const handleSignup=()=>{
-        navigation.navigate("Signup");
+        navigation.navigate("UserDashboard");
 
     };
   return (
@@ -42,7 +42,7 @@ export default HomeScreen
 const styles = StyleSheet.create({
     container:{
         flex:1,
-        backgroundColor:colors.white,
+        backgroundColor: colors?.white || '#FFFFFF',
         alignItems:"center",
     }, 
     logo:{

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "837601444314",
+    "project_id": "gentle-dominion-441117-p8",
+    "storage_bucket": "gentle-dominion-441117-p8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837601444314:android:bafb7249e1e346303a00e3",
+        "android_client_info": {
+          "package_name": "com.adaptivelearningapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837601444314-mvm880dt40vbfnj3966567om12v7l08b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.adaptivelearningapp",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "837601444314-5mhu0lda0jg4bjhtto100ubldjnre1l6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSzUgt9nmOnvaQy48OLzZn4fVGGvKTRew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "837601444314-52dj9n24kdnma22o6i6canqp01jp6k41.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
